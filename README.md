@@ -1,4 +1,4 @@
-#@sharonchoong's website build
+# @sharonchoong's Website
 A Statistics and coding enthusiast's website of projects
 
 Built from scratch with the help of Bootstrap and D3.js.
