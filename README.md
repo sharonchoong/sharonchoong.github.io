@@ -1,4 +1,4 @@
-#@sharonchoong's website build
-A Statistics and coding enthusiast's website of projects
+#My Website
+My GitHub website. [https://sharonchoong.github.io/](https://sharonchoong.github.io/)
 
-Built from scratch with the help of Bootstrap and D3.js.
+Built with Bootstrap and D3.js.

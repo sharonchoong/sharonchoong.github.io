@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: url('fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf') format('truetype');
+}
+
+.brand {
+	font-family: 'Pacifico', cursive;
+	font-size: 40px !important;
+}
+.second_font {
+	font-family: 'Darker Grotesque', sans-serif;
+}
+.body_padding {
+	padding-top: 7rem;
+}

@@ -2,13 +2,146 @@
 <html>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
-		
+		<link rel="stylesheet" href="main.css"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://d3js.org/d3.v5.js"></script>
 	</head>
-	<body>
-		<div>Hello World</div>
+	<body class="second_font body_padding">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<div class="container">
+				<div class="site-logo">
+					<a href="index.html" class="brand navbar-brand">Sharon Choong</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarmenu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" style="font-size:26px;" href="#">Visuals <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:26px;" href="projects.html">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" style="font-size:26px;" href="about.html">About Me</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main role="main" class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="list-group" id="list-tab" role="tablist">
+					  <a class="list-group-item list-group-item-action active" id="list-traversal-list" data-toggle="list" href="#list-traversal" role="tab" aria-controls="traversal">Tree Traversal</a>
+					  <a class="list-group-item list-group-item-action" id="list-sorting-list" data-toggle="list" href="#list-sorting" role="tab" aria-controls="sorting">Sorting</a>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="tab-content" id="nav-tabContent">
+					  <div class="tab-pane fade show active" id="list-traversal" role="tabpanel" aria-labelledby="list-traversal-list">
+						<section>
+							<p class="lead">A visualization of traversal/search algorithms for a binary tree.</p>
+							<div class="row">
+								<div class="col">
+									<div class="btn-group btn-group-toggle" data-toggle="buttons">
+									  <label class="btn btn-outline-dark active">
+										<input type="radio" name="opt_traversal" value="bfs" autocomplete="off" checked> Breadth-First Search
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_traversal" value="dfs_pre" autocomplete="off"> Depth-First Search: Preorder
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_traversal" value="dfs_in" autocomplete="off"> Depth-First Search: Inorder
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_traversal" value="dfs_post" autocomplete="off"> Depth-First Search: Postorder
+									  </label>
+									</div>
+								</div>
+							</div>
+							<div class="row mt-2">
+								<div class="col">
+									<div class="btn-group btn-group-toggle" data-toggle="buttons">
+									  <label class="btn btn-info">
+										<input type="radio" name="opt_speed" value="1000" autocomplete="off"> Slower
+									  </label>
+									  <label class="btn btn-info">
+										<input type="radio" name="opt_speed" value="50" autocomplete="off"> Slow
+									  </label>
+									  <label class="btn btn-info active">
+										<input type="radio" name="opt_speed" value="5" autocomplete="off" checked> Fast
+									  </label>
+									</div>
+								</div>
+							</div>
+							<svg id="tree" style="width: 100%;"></svg>
+						</section>
+					  </div>
+					  <div class="tab-pane fade" id="list-sorting" role="tabpanel" aria-labelledby="list-sorting-list">
+						<section>
+							<p class="lead">A visualization of sorting algorithms.</p>
+							<div class="row">
+								<div class="col">
+									<div class="btn-group btn-group-toggle" data-toggle="buttons">
+									  <label class="btn btn-outline-dark active">
+										<input type="radio" name="opt_sort" value="selection" autocomplete="off" checked> Selection
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_sort" value="bubble" autocomplete="off"> Bubble
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_sort" value="insertion" autocomplete="off"> Insertion
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_sort" value="quicksort" autocomplete="off"> Quicksort
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_sort" value="heapsort" autocomplete="off"> Heapsort
+									  </label>
+									  <label class="btn btn-outline-dark">
+										<input type="radio" name="opt_sort" value="mergesort" autocomplete="off"> Merge Sort
+									  </label>
+									</div>
+								</div>
+							</div>
+							<div class=mt-2>
+								<span>Array size: </span><input id="array_minus" class="btn btn-warning btn-sm mr-1" type="button" value="-"><span id="array_size">10</span><input id="array_plus" class="btn btn-warning btn-sm ml-1" type="button" value="+">
+							</div>
+							<div><span>Number of steps to sort: </span><span id="nsteps">0</span></div>
+							<svg id="sort" style="width: 100%;"></svg>
+						</section>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="charts/tree.js"></script>
+		<script src="charts/sort.js"></script>
+		<script type="application/javascript">
+			tree.createTree();
+			
+			$("#list-traversal-list, input[name='opt_speed'], input[name='opt_traversal']").on("change show.bs.tab", function() {
+				tree.createTree();
+			});
+			
+			$("#array_minus").on("click", function() {
+				sort.setArraySize(Math.max(Number($("#array_size").text()) - 10, 10));
+				sort.sortItems();
+			});
+			
+			$("#array_plus").on("click", function() {
+				sort.setArraySize(Math.min(Number($("#array_size").text()) + 10, 50));
+				sort.sortItems();
+			});
+			
+			$("#list-sorting-list, input[name='opt_sort']").on("change show.bs.tab", function() {
+				sort.sortItems();
+			});
+		</script>
 	</body>
 </html>
