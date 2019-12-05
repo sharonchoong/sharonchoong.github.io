@@ -1,10 +1,10 @@
 (function() {
 	$.get("https://api.github.com/users/sharonchoong/repos").done(function(data){
-		const width = document.getElementById('bubble').parentElement.clientWidth; // get width in pixels
+		const width = $("[role='main']").width(); // get width in pixels
 		const height = 0.7 * window.innerHeight;
 		const svg = d3.select('#bubble')
-				.style("height", height)
-				.style("width", width);
+				.attr("height", height)
+				.attr("width", width);
 				
 		const centerX = width * 0.5;
 		const centerY = height * 0.5;
@@ -12,14 +12,14 @@
 		const strength = 0.5;
 		const format = d3.format(',d');
 		const scaleColor = d3.scaleOrdinal()
-			.domain(data.map(d => d.id))
+			.domain(data.map(function(d) { return  d.id }))
 			.range(d3.schemeSet3);
 			
 		// use pack to calculate radius of the circle
 		let pack = d3.pack()
 			.size([width , height ])
 			.padding(1.5);
-		let forceCollide = d3.forceCollide(d => d.r + 1);
+		let forceCollide = d3.forceCollide(function(d) { return d.r + 1 });
 		// use the force
 		let simulation = d3.forceSimulation()
 			.force('charge', d3.forceManyBody())
@@ -28,7 +28,7 @@
 			.force('x', d3.forceX(centerX ).strength(strength))
 			.force('y', d3.forceY(centerY ).strength(strength));
 			
-		let nodes = data.map(node => {
+		let nodes = data.map(function(node) { 
 			return {
 				x: centerX, 
 				y: centerY,
@@ -48,28 +48,31 @@
 			.enter().append('g')
 			.attr('class', 'node')
 			.call(d3.drag()
-				.on('start', (d) => {
+				.on('start', function(d) {  
 					if (!d3.event.active) simulation.alphaTarget(0.2).restart();
 					d.fx = d.x;
 					d.fy = d.y;
+					return d;
 				})
-				.on('drag', (d) => {
+				.on('drag', function(d) { 
 					d.fx = d3.event.x;
 					d.fy = d3.event.y;
+					return d;
 				})
-				.on('end', (d) => {
+				.on('end', function(d) {  
 					if (!d3.event.active) simulation.alphaTarget(0);
 					d.fx = null;
 					d.fy = null;
+					return d;
 				}));
 		node.append('circle')
-			.attr('id', d => d.id)
+			.attr('id', function(d) { return d.id })
 			.attr('r', 0)
-			.style('fill', d => scaleColor(d.id))
+			.style('fill', function(d) { return scaleColor(d.id) })
 			.transition().duration(2000).ease(d3.easeElasticOut)
-				.tween('circleIn', (d) => {
+				.tween('circleIn', function(d) { 
 					let i = d3.interpolateNumber(0, radius);
-					return (t) => {
+					return function(t) { 
 						d.r = i(t);
 						simulation.force('collide', forceCollide);
 					}
@@ -82,11 +85,11 @@
 			
 		circle_text.append('a')
 			.attr("class", "project-title")
-			.attr('href', d => d.url)
+			.attr('href', function(d) { return d.url })
 				.append('tspan')
 				.attr('x', 0)
 				.attr('y', -radius * 0.5)
-				.text(d => d.name)
+				.text(function(d) { return d.name })
 				.attr("font-weight", "bold")
 				.attr("font-size", "20px");
 			
@@ -94,7 +97,7 @@
 			.attr("class", "project-lang")
 			.attr('x', 0)
 			.attr('y', -radius * 0.25)
-			.text(d => d.language)
+			.text(function(d) { return d.language })
 			.attr("font-size", "18px");
 			
 		circle_text.append('tspan')
@@ -102,13 +105,14 @@
 			.attr('x', 0)
 			.attr('y', 0)
 			.attr('dy', 0)
-			.text(d => d.description)
+			.text(function(d) { return d.description })
+			.attr("font-size", "2.3vmin")
 			.call(wrap, radius * 1.7);
 				
 		function ticked() {
-			node.attr('transform', d => `translate(${d.x},${d.y})`)
+			node.attr('transform', function(d) { return "translate(" + d.x + "," + d.y + ")"; })
 				.select('circle')
-					.attr('r', d => d.r);
+					.attr('r', function(d) { return d.r });
 		}
 		function wrap(text, width) {
 		  text.each(function() {

@@ -1,20 +1,19 @@
 const tree = (function() {
+	
 	const tree_height = 8;
-	const svgwidth = document.getElementById('tree').parentElement.clientWidth;
+	const svgwidth = $("#tree").parent().width();
     const svgheight = 0.7 * window.innerHeight;
 	const svg = d3.select('#tree')
-				.style("height", svgheight)
-				.style("width", svgwidth);
+				.attr("height", svgheight)
+				.attr("width", svgwidth);
 	
-	class TreeNode {
-	  constructor(x0, y0, height) {
+	function TreeNode (x0, y0, height) {
 		this.x0 = x0;
 		this.y0 = y0;
 		this.height = height;
 		this.level = tree_height - height + 1;
 		this.left = null;
 		this.right = null;
-	  }
 	}
 	
 	function drawbranch(start_node, end_node, delay)

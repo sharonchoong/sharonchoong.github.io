@@ -1,9 +1,9 @@
 const sort = (function() {
-	const svgwidth = document.getElementById('tree').parentElement.clientWidth;
+	const svgwidth = $("#tree").parent().width();
 	const svgheight = 0.7 * window.innerHeight;
 	const svg = d3.select('#sort')
-			.style("height", svgheight)
-			.style("width", svgwidth);
+			.attr("height", svgheight)
+			.attr("width", svgwidth);
 			
 	let array_size = null;
 	let delayMilliseconds = null;
@@ -37,12 +37,12 @@ const sort = (function() {
 		.data(circles)
 		.enter()
 		.append("circle")
-		.attr("data-id", d => d.id)
-		.attr("cx", d => positions[d.id].x)
-		.attr("cy", d => positions[d.id].y)
+		.attr("data-id", function(d) { return d.id })
+		.attr("cx", function(d) { return positions[d.id].x })
+		.attr("cy", function(d) { return positions[d.id].y })
 		.attr("r", radius)
-		.attr("data-value", d => d.value)
-		.attr("fill", d => d3.interpolateViridis(d.value));
+		.attr("data-value", function(d) { return  d.value })
+		.attr("fill", function(d) { return  d3.interpolateViridis(d.value) });
 		
 		if ($("input[name='opt_sort']:checked").val() == "selection")
 			selectionSort(circles);
