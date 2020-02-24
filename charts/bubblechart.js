@@ -1,14 +1,14 @@
 (function() {
 	$.get("https://api.github.com/users/sharonchoong/repos").done(function(data){
 		const width = $("[role='main']").width(); // get width in pixels
-		const height = 0.7 * window.innerHeight;
+		const height = 0.9 * window.innerHeight;
 		const svg = d3.select('#bubble')
 				.attr("height", height)
 				.attr("width", width);
 				
 		const centerX = width * 0.5;
 		const centerY = height * 0.5;
-		const radius = Math.min(width, height) * 0.23;
+		const radius = Math.min(width, height) * 0.18;
 		const strength = 0.5;
 		const format = d3.format(',d');
 		const scaleColor = d3.scaleOrdinal()
