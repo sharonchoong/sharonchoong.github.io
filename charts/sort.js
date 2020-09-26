@@ -8,6 +8,7 @@ const sort = (function() {
 	let array_size = null;
 	let delayMilliseconds = null;
 	let radius = null;
+	let count = 0;
 	let positions = [];
 	let stepCountTimers= [];
 	setArraySize(Number($("#array_size").text()));
@@ -29,6 +30,7 @@ const sort = (function() {
 		
 		svg.selectAll("*").remove();
 		$("#nsteps").text("0");
+		count = 0;
 		const circles = d3.range(array_size).map(function(i) {
 			return {id: i,
 				value: Number(Math.floor(Math.random() * 100) / 100)}
@@ -56,6 +58,7 @@ const sort = (function() {
 			heapSort(circles);
 		else if ($("input[name='opt_sort']:checked").val() == "mergesort")
 			mergeSort(circles);
+		//alert(circles.map(d=>d.value))
 	}
 	
 	function moveAnimation(id1, x1, y1, x2, y2, iteration, duration, down) 
@@ -71,10 +74,35 @@ const sort = (function() {
 			.attr("cx", x2)
 			.attr("cy", y2);
 	}
+	
 	function swapAnimation(id1, x1, y1, id2, x2, y2, iteration) 
 	{
 		moveAnimation(id1, x1, y1, x2, y2, iteration, 0.5, 0);
 		moveAnimation(id2, x2, y2, x1, y1, iteration, 0.5, 1); 
+	}
+	
+	function swap(array, index1, index2)
+	{
+		const to_be_swapped = array[index1];
+		array[index1] = array[index2];
+		array[index2] = to_be_swapped;
+	}
+	
+	function highlightCircle(id, is_hide, color, iteration)
+	{
+		svg.select("[data-id='" + id + "']")
+			.transition()
+			.delay(iteration * delayMilliseconds)
+			.duration(delayMilliseconds)
+			.attr("stroke-width", is_hide === true ? 0: 5)
+			.attr("stroke", color);
+	}
+	
+	function incrementTimer(delay) {
+		const changeStepCount = setTimeout(function() {
+			$("#nsteps").text(Number($("#nsteps").text()) + 1);
+		}, delay);
+		stepCountTimers.push(changeStepCount);
 	}
 	
 	function selectionSort(array) {
@@ -90,19 +118,17 @@ const sort = (function() {
 				if (array[i].value < array[indexMinimum].value)
 					indexMinimum = i;
 			}
-			let newMin = array[indexMinimum];
-			swapAnimation(newMin.id, positions[indexMinimum].x, positions[indexMinimum].y, array[indexLastSorted].id, positions[indexLastSorted].x, positions[indexLastSorted].y, j);
-				
-			array[indexMinimum] = array[indexLastSorted];
-			array[indexLastSorted] = newMin;
+			swapAnimation(array[indexMinimum].id, positions[indexMinimum].x, positions[indexMinimum].y, array[indexLastSorted].id, positions[indexLastSorted].x, positions[indexLastSorted].y, j);
+			swap(array, indexMinimum, indexLastSorted);
+			
 			indexLastSorted++;
 		}
 	}
 	
 	function bubbleSort(array) {
-		delayMilliseconds = 2000 / array_size;
 		let steps = 0;
 		let n = array.length - 1;
+		
 		//compare closest two
 		while (n > 0) {
 			let last_swap = 0
@@ -113,19 +139,20 @@ const sort = (function() {
 				if (array[j + 1].value < array[j].value)
 				{
 					last_swap = j + 1;
-                    const to_be_swapped = array[j];
-					swapAnimation(to_be_swapped.id, positions[j].x, positions[j].y, array[j+1].id, positions[j+1].x, positions[j+1].y, steps);
-					array[j] = array[j + 1];
-					array[j + 1] = to_be_swapped;
+					
+					swapAnimation(array[j].id, positions[j].x, positions[j].y, array[j+1].id, positions[j+1].x, positions[j+1].y, steps);
+					swap(array, j, j + 1);
 				} 
 			}
 			n = last_swap;
 		}
+		//alert(array.map(d=>d.value))
 	}
 	
 	function insertionSort(array) {
 		let steps = 0;
 		let indexLastSorted = 0;
+		
 		//get first and put in appropriate place in sorted elements
 		for (let i = indexLastSorted + 1; i < array.length; i++) {
 			const to_be_swapped = array[i];
@@ -145,13 +172,101 @@ const sort = (function() {
 			array[j] = to_be_swapped;
 			indexLastSorted++;
 		}
-		//alert(array.map(d=>d.value))
 	}
 	
-	function quickSort(array) {
-		let indexLastSorted = 0;
-		//cut into two, designate pivot then compare and swap
+	function quickSort(array, indexLeft, indexRight) {
 		
+		if (typeof indexLeft === "undefined")
+			indexLeft = 0;
+		if (typeof indexRight === "undefined")
+			indexRight = array.length - 1;
+		
+		//designate pivot then compare and swap
+		if (indexLeft < indexRight)
+		{
+			const indexPivot = partition(array, indexLeft, indexRight);
+			quickSort(array, indexLeft, indexPivot - 1);
+			quickSort(array, indexPivot + 1, indexRight);
+		}
+	}
+	
+	function partition(array, indexLeft, indexRight)
+	{
+		const indexMid = Math.floor((indexLeft + indexRight) / 2);
+		if (Number($("#array_size").text()) >=40)
+		{
+			if ((indexRight - indexLeft + 1) >= 3) {
+				//median of three
+				highlightCircle(array[indexMid].id, false, "blue", count);
+				highlightCircle(array[indexLeft].id, false, "blue", count);
+				highlightCircle(array[indexRight].id, false, "blue", count);
+				count++;
+				incrementTimer(count * delayMilliseconds);
+				incrementTimer(count * delayMilliseconds);
+				incrementTimer(count * delayMilliseconds);
+				if (array[indexMid].value < array[indexLeft].value)
+				{
+					swapAnimation(array[indexMid].id, positions[indexMid].x, positions[indexMid].y, array[indexLeft].id, positions[indexLeft].x, positions[indexLeft].y, count);
+					swap(array, indexMid, indexLeft);
+					incrementTimer(count * delayMilliseconds);
+				}
+				if (array[indexRight].value < array[indexLeft].value)
+				{
+					swapAnimation(array[indexRight].id, positions[indexRight].x, positions[indexRight].y, array[indexLeft].id, positions[indexLeft].x, positions[indexLeft].y, count);
+					swap(array, indexRight, indexLeft);
+					incrementTimer(count * delayMilliseconds);
+				}
+				//now left is smallest of three
+				if (array[indexMid].value > array[indexRight].value)
+				{
+					swapAnimation(array[indexMid].id, positions[indexMid].x, positions[indexMid].y, array[indexRight].id, positions[indexRight].x, positions[indexRight].y, count);
+					swap(array, indexMid, indexRight);
+					incrementTimer(count * delayMilliseconds);
+				}
+				count++;
+				highlightCircle(array[indexMid].id, true, "blue", count);
+				highlightCircle(array[indexLeft].id, true, "blue", count);
+				highlightCircle(array[indexRight].id, true, "blue", count);
+				//now median is at indexMid
+			}
+		}
+		
+		const indexPivot = indexMid;
+		const pivot = array[indexMid];
+		count++;
+		highlightCircle(pivot.id, false, "red", count);
+		let i = indexLeft;
+		let j = indexRight;
+		while (true)
+		{
+			count++;
+			incrementTimer(count * delayMilliseconds);
+			
+			while (array[i].value <= pivot.value && array[i].id != pivot.id){
+				i++;
+				console.log("i: " + i)
+				console.log("i value " + array[i].value)
+				console.log("pivot value " + pivot.value)
+				console.log(pivot);
+			} 
+			
+			while (array[j].value >= pivot.value && array[j].id != pivot.id){
+				j--;
+				console.log("j: " + j)
+				console.log("j value " + array[j].value)
+				console.log("pivot value " + pivot.value)
+				console.log(pivot);
+			} 
+				
+			if (i >= j)
+			{
+				count++;
+				highlightCircle(pivot.id, true, "red", count);
+				return j;
+			}
+			swapAnimation(array[i].id, positions[i].x, positions[i].y, array[j].id, positions[j].x, positions[j].y, count);
+			swap(array, i, j);
+		}
 	}
 	
 	function heapSort(array) {
@@ -164,12 +279,8 @@ const sort = (function() {
 		//get first and put in appropriate place in sorted elements
 	}
 	
-	function incrementTimer(delay) {
-		const changeStepCount = setTimeout(function() {
-			$("#nsteps").text(Number($("#nsteps").text()) + 1);
-		}, delay);
-		stepCountTimers.push(changeStepCount);
-	}
+	//radix counting bucket O(n)
+	
 	
 	return { sortItems: sortItems, setArraySize: setArraySize }
 })();

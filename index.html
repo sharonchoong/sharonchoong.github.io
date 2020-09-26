@@ -97,7 +97,7 @@
 									  <label class="btn btn-outline-dark">
 										<input type="radio" name="opt_sort" value="insertion" autocomplete="off"> Insertion
 									  </label>
-									  <label class="btn btn-outline-dark" style="display: none;">
+									  <label class="btn btn-outline-dark">
 										<input type="radio" name="opt_sort" value="quicksort" autocomplete="off"> Quicksort
 									  </label>
 									  <label class="btn btn-outline-dark" style="display: none;">
@@ -109,10 +109,11 @@
 									</div>
 								</div>
 							</div>
-							<div class=mt-2>
-								<span>Array size: </span><input id="array_minus" class="btn btn-warning btn-sm mr-1" type="button" value="-"><span id="array_size">10</span><input id="array_plus" class="btn btn-warning btn-sm ml-1" type="button" value="+">
+							<div class="mt-2">
+								<span>Array size: </span><input id="array_minus" class="btn btn-warning btn-sm mr-1" type="button" value="-"><span id="array_size">20</span><input id="array_plus" class="btn btn-warning btn-sm ml-1" type="button" value="+">
 							</div>
 							<div><span>Number of steps to sort: </span><span id="nsteps">0</span></div>
+							<div id="alert_quicksort" style="display: none;">The pivot is indicated in red.  For array sizes 40 and larger, rearrangements to get the median-of-three pivot are indicated in blue.</div>
 							<svg id="sort" style="width: 100%;"></svg>
 						</section>
 					  </div>
@@ -140,6 +141,11 @@
 			});
 			
 			$("#list-sorting-list, input[name='opt_sort']").on("change show.bs.tab", function() {
+				if ($("input[name='opt_sort']:checked").val() == "quicksort")
+					$("#alert_quicksort").show();
+				else
+					$("#alert_quicksort").hide();
+				sort.setArraySize(Number($("#array_size").text()));
 				sort.sortItems();
 			});
 		</script>
