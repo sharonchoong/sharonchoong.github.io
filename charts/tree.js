@@ -50,7 +50,6 @@ const tree = (function() {
 				.attr('stroke', level > tree_height / 4 * 3  ? "#855E42" : (
 				level > tree_height / 3 ? "#6A4B35" : "#553C2A"))
 				.attr('stroke-width', height * 2)
-				.attr('stroke-linecap', "round")
 				.attr('fill', 'none');
 			
 			var totalLength = branch.node().getTotalLength();
@@ -160,15 +159,16 @@ const tree = (function() {
 	function getRandomBranch(height, previous_angle)
 	{
 		let result = { left: {}, right: {}};
-		//let angle = d3.randomNormal(45, 11.5 * Math.log(height))();
-		let angle_right = d3.randomNormal(45, 5)();
+		let angle_right = d3.randomNormal(30, 5)();
+		let angle_left = 360 - angle_right;
+		const add_angle = d3.randomNormal(30, 5)();
 		if (previous_angle)
 		{
-			angle_right = previous_angle + d3.randomNormal(20, 8)();
-			angle_right = angle_right > 360 ? 360 - angle_right: angle_right;
+			angle_right = previous_angle + add_angle;
+			angle_left = previous_angle - add_angle;
 		}
-		let angle_left = angle_right - d3.randomNormal(60, 15)()
-		const branch_radius = Math.min(svgwidth * 0.6, svgheight * 0.7) / (tree_height  * (tree_height + 1) / 2);
+		
+		const branch_radius = Math.min(svgwidth * 0.6, svgheight * 0.75) / (tree_height  * (tree_height + 1) / 2);
 		result.left.angle = angle_left;
 		result.left.width = Math.sin(angle_left * Math.PI / 180) * branch_radius;
 		result.left.height = Math.cos(angle_left * Math.PI / 180) * branch_radius;
