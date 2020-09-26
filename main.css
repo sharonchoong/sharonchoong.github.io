@@ -1,19 +1,29 @@
 @font-face {
-    font-family: 'Pacifico';
-    src: url('fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    font-family: 'Hey October';
+    src: url('fonts/HeyOctober/HeyOctober-Yz37y.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Darker Grotesque';
-    src: url('fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf') format('truetype');
+    font-family: 'Segan';
+    src: url('fonts/Segan/Segan-Light.ttf') format('truetype');
 }
 
 .brand {
-	font-family: 'Pacifico', cursive;
-	font-size: 40px !important;
+	font-family: 'Hey October';
+	font-size: 56px !important;
 }
+
+.nav-link {
+	font-family: 'Hey October';
+	font-size: 35px !important;
+}
+
 .second_font {
-	font-family: 'Darker Grotesque', sans-serif;
+	font-family: 'Segan', sans-serif;
 }
 .body_padding {
 	padding-top: 7rem;
+}
+
+.lead {
+	margin-top: 15px;
 }
