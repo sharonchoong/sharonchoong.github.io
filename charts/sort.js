@@ -244,18 +244,10 @@ const sort = (function() {
 			
 			while (array[i].value <= pivot.value && array[i].id != pivot.id){
 				i++;
-				console.log("i: " + i)
-				console.log("i value " + array[i].value)
-				console.log("pivot value " + pivot.value)
-				console.log(pivot);
 			} 
 			
 			while (array[j].value >= pivot.value && array[j].id != pivot.id){
 				j--;
-				console.log("j: " + j)
-				console.log("j value " + array[j].value)
-				console.log("pivot value " + pivot.value)
-				console.log(pivot);
 			} 
 				
 			if (i >= j)
