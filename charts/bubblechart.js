@@ -1,5 +1,8 @@
 (function() {
 	$.get("https://api.github.com/users/sharonchoong/repos").done(function(data){
+		//filter out forked projects
+		data = data.filter(function(d) { return !d.fork; });
+		
 		const width = $("[role='main']").width(); // get width in pixels
 		const height = 0.9 * window.innerHeight;
 		const svg = d3.select('#bubble')
@@ -91,14 +94,14 @@
 				.attr('y', -radius * 0.5)
 				.text(function(d) { return d.name })
 				.attr("font-weight", "bold")
-				.attr("font-size", "20px");
+				.attr("font-size", "18px");
 			
 		circle_text.append('tspan')
 			.attr("class", "project-lang")
 			.attr('x', 0)
 			.attr('y', -radius * 0.25)
 			.text(function(d) { return d.language })
-			.attr("font-size", "18px");
+			.attr("font-size", "16px");
 			
 		circle_text.append('tspan')
 			.attr("class", "project-desc")
@@ -106,7 +109,7 @@
 			.attr('y', 0)
 			.attr('dy', 0)
 			.text(function(d) { return d.description })
-			.attr("font-size", "2.3vmin")
+			.attr("font-size", "2vmin")
 			.call(wrap, radius * 1.7);
 				
 		function ticked() {
