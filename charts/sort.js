@@ -1,5 +1,5 @@
 const sort = (function() {
-	const svgwidth = $("#tree").parent().width();
+	const svgwidth = $("#visuals .container").width() * 0.9;
 	const svgheight = 0.7 * window.innerHeight;
 	const svg = d3.select('#sort')
 			.attr("height", svgheight)

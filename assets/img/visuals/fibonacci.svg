@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="fibonacci"
+   style="animation: 0s ease 0s 1 normal none running none; appearance: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0); border: 0px none rgb(33, 37, 41); inset: auto; clear: none; clip: auto; color: rgb(33, 37, 41); columns: auto auto; contain: none; content: normal; cursor: auto; cx: 0px; cy: 0px; d: none; direction: ltr; fill: rgb(0, 0, 0); filter: none; flex: 0 1 auto; float: none; font: 16px / 24px -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; gap: normal; hyphens: manual; isolation: auto; margin: 0px; marker: none; mask: none; offset: none 0px auto 0deg; opacity: 1; order: 0; orphans: 2; outline: rgb(33, 37, 41) none 0px; overflow: hidden; padding: 0px; page: auto; perspective: none; position: static; quotes: auto; r: 0px; resize: none; rx: auto; ry: auto; speak: normal; stroke: none; transform: none; transition: all 0s ease 0s; visibility: visible; widows: 2; x: 0px; y: 0px; zoom: 1;"
+   height="300"
+   width="400"
+   viewBox="0 0 572.5408935546875 471.8000183105469"
+   preserveAspectRatio="none"
+   version="1.1"
+   mask="none"
+   sodipodi:docname="fibonacci.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata127">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs125" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview123"
+     showgrid="false"
+     inkscape:zoom="0.69166667"
+     inkscape:cx="385.85605"
+     inkscape:cy="39.483701"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="fibonacci" />
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g8">
+    <rect
+       x="412.5"
+       y="212.31"
+       width="23.59"
+       height="23.59"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#8dd3c7;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect2" />
+    <text
+       x="424.29501"
+       y="224.105"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:15px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text4">1 x 1</text>
+    <path
+       d="m 412.5,235.9 a 23.59,23.59 0 0 0 23.59,-23.59"
+       stroke-dasharray="37.0603, 37.0603"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path6" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g16">
+    <rect
+       x="412.5"
+       y="188.72"
+       width="23.59"
+       height="23.59"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#ffffb3;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect10" />
+    <text
+       x="424.29501"
+       y="200.515"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:15px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text12">1 x 1</text>
+    <path
+       d="M 436.09,212.31 A 23.59,23.59 0 0 0 412.5,188.72"
+       stroke-dasharray="37.0603, 37.0603"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path14" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g24">
+    <rect
+       x="365.32001"
+       y="188.72"
+       width="47.18"
+       height="47.18"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#bebada;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect18" />
+    <text
+       x="388.91"
+       y="212.31"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:15px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text20">2 x 2</text>
+    <path
+       d="M 412.5,188.72 A 47.18,47.18 0 0 0 365.32,235.9"
+       stroke-dasharray="74.1207, 74.1207"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path22" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g32">
+    <rect
+       x="365.32001"
+       y="235.89999"
+       width="70.769997"
+       height="70.769997"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#fb8072;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect26" />
+    <text
+       x="400.70499"
+       y="271.285"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:15px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text28">3 x 3</text>
+    <path
+       d="m 365.32,235.9 a 70.77,70.77 0 0 0 70.77,70.77"
+       stroke-dasharray="111.181, 111.181"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path30" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g40">
+    <rect
+       x="436.09"
+       y="188.72"
+       width="117.95"
+       height="117.95"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#80b1d3;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect34" />
+    <text
+       x="495.065"
+       y="247.69501"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.1825px;line-height:18.2737px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text36">5 x 5</text>
+    <path
+       d="M 436.09,306.67 A 117.95,117.95 0 0 0 554.04,188.72"
+       stroke-dasharray="185.302, 185.302"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path38" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g48">
+    <rect
+       x="365.32001"
+       y="-2.8421709e-14"
+       width="188.72"
+       height="188.72"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#fdb462;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect42" />
+    <text
+       x="459.67999"
+       y="94.360001"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.0855px;line-height:30.1283px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text44">8 x 8</text>
+    <path
+       d="M 554.04,188.72 A 188.72,188.72 0 0 0 365.32,0"
+       stroke-dasharray="296.482, 296.482"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path46" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g56">
+    <rect
+       x="58.650002"
+       y="-2.8421709e-14"
+       width="306.67001"
+       height="306.67001"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#b3de69;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect50" />
+    <text
+       x="211.985"
+       y="153.33501"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.1155px;line-height:49.6732px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text52">13 x 13</text>
+    <path
+       d="M 365.32,0 A 306.67,306.67 0 0 0 58.65,306.67"
+       stroke-dasharray="481.784, 481.784"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path54" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g64">
+    <rect
+       x="58.650002"
+       y="306.67001"
+       width="495.39001"
+       height="495.39001"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#fccde5;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect58" />
+    <text
+       x="306.345"
+       y="554.36499"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:54.5982px;line-height:81.8972px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text60">21 x 21</text>
+    <path
+       d="M 58.65,306.67 A 495.39,495.39 0 0 0 554.04,802.06"
+       stroke-dasharray="778.266, 778.266"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path62" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g72">
+    <rect
+       x="554.03998"
+       y="0"
+       width="802.06"
+       height="802.06"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#d9d9d9;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect66" />
+    <text
+       x="955.07001"
+       y="401.03"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.0171px;line-height:135.026px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text68">34 x 34</text>
+    <path
+       d="M 554.04,802.06 A 802.06,802.06 0 0 0 1356.1,0"
+       stroke-dasharray="1260.05, 1260.05"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path70" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g80">
+    <rect
+       x="58.650002"
+       y="-1297.45"
+       width="1297.45"
+       height="1297.45"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#bc80bd;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect74" />
+    <text
+       x="707.375"
+       y="-648.72498"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:148.413px;line-height:222.62px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text76">55 x 55</text>
+    <path
+       d="M 1356.1,0 A 1297.45,1297.45 0 0 0 58.65,-1297.45"
+       stroke-dasharray="2038.32, 2038.32"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path78" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g88">
+    <rect
+       x="-2040.86"
+       y="-1297.45"
+       width="2099.51"
+       height="2099.51"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#ccebc5;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect82" />
+    <text
+       x="-991.10498"
+       y="-247.69501"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:244.692px;line-height:367.038px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text84">89 x 89</text>
+    <path
+       d="M 58.65,-1297.45 A 2099.51,2099.51 0 0 0 -2040.86,802.06"
+       stroke-dasharray="3298.37, 3298.37"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path86" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g96">
+    <rect
+       x="-2040.86"
+       y="802.06"
+       width="3396.96"
+       height="3396.96"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#ffed6f;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect90" />
+    <text
+       x="-342.38"
+       y="2500.54"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:403.429px;line-height:605.143px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text92">144 x 144</text>
+    <path
+       d="M -2040.86,802.06 A 3396.96,3396.96 0 0 0 1356.1,4199.02"
+       stroke-dasharray="5336.68, 5336.68"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path94" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g104">
+    <rect
+       x="1356.1"
+       y="-1297.45"
+       width="5496.4702"
+       height="5496.4702"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#8dd3c7;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect98" />
+    <text
+       x="4104.335"
+       y="1450.785"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:665.142px;line-height:997.713px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text100">233 x 233</text>
+    <path
+       d="M 1356.1,4199.02 A 5496.47,5496.47 0 0 0 6852.57,-1297.45"
+       stroke-dasharray="8635.05, 8635.05"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path102" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g112">
+    <rect
+       x="-2040.86"
+       y="-10190.88"
+       width="8893.4297"
+       height="8893.4297"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#ffffb3;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect106" />
+    <text
+       x="2405.855"
+       y="-5744.165"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1096.63px;line-height:1644.95px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text108">377 x 377</text>
+    <path
+       d="M 6852.57,-1297.45 A 8893.43,8893.43 0 0 0 -2040.86,-10190.9"
+       stroke-dasharray="13971.7, 13971.7"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path110" />
+  </g>
+  <g
+     class="fibArc"
+     transform="matrix(0.02459016,0,0,0.03010954,402.35657,329.45396)"
+     style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+     mask="none"
+     id="g120">
+    <rect
+       x="-16430.76"
+       y="-10190.88"
+       width="14389.9"
+       height="14389.9"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:0.5;isolation:auto;fill:#bebada;stroke:#000000;stroke-width:1px;marker:none"
+       mask="none"
+       id="rect114" />
+    <text
+       x="-9235.8096"
+       y="-2995.9299"
+       text-anchor="middle"
+       style="d:none;color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1808.04px;line-height:2712.06px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:block;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:#000000;stroke:none;marker:none"
+       mask="none"
+       id="text116">610 x 610</text>
+    <path
+       d="M -2040.86,-10190.9 A 14389.9,14389.9 0 0 0 -16430.8,4199.02"
+       stroke-dasharray="22606.8, 22606.8"
+       stroke-dashoffset="0"
+       style="color:#212529;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:24px;font-family:'-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';direction:ltr;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;fill:none;stroke:#000000;stroke-width:72px;marker:none"
+       mask="none"
+       id="path118" />
+  </g>
+</svg>

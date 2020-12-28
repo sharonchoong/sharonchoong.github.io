@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Segan';
+    src: url('../fonts/Segan/Segan-Light.ttf') format('truetype');
+}
+
+#mainNav .navbar-brand {
+	font-family: 'Handlee';
+	font-size: 20px !important;
+	font-weight: normal;
+}
+
+header.masthead .masthead-subheading {
+	font-family: 'Handlee';
+	font-size: 20px !important;
+	font-weight: normal;
+}
+
+header.masthead .masthead-heading {
+	font-family: 'Handlee';
+	font-size: 48px !important;
+	font-weight: normal;
+}
+
+header.masthead {
+	padding-bottom: 60%;
+}
+
+.project-title {
+	font-size: 8px;
+}
+
+.project-lang {
+	font-size: 7px;
+}
+
+.project-desc {
+	font-size: 7px;
+}
+
+@media (min-width: 768px) {
+	#mainNav .navbar-brand {
+		font-family: 'Handlee';
+		font-size: 48px !important;
+		font-weight: normal;
+	}
+
+	header.masthead .masthead-subheading {
+		font-family: 'Handlee';
+		font-size: 50px !important;
+		font-weight: normal;
+		margin-bottom: 25px;
+	}
+
+	header.masthead .masthead-heading {
+		font-family: 'Handlee';
+		font-size: 86px !important;
+		font-weight: normal;
+	}
+
+	header.masthead {
+		padding-bottom: 40%;
+	}
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.btn-xl, #visuals .visual-item .visual-caption .visual-caption-heading,
+#mainNav .navbar-nav .nav-item .nav-link,
+.section-heading, .contact-detail, .footer
+{
+	font-family: 'Segan', sans-serif;
+}
+
+.contact-detail {
+	color: white;
+}
+
+.svg-container {
+	position: relative; 
+	width: 100%; 
+	overflow: hidden; 
+	vertical-align: top;
+}
+
+.svg-background {
+	position: absolute;
+	left:0px; 
+	top: 0px;
+}

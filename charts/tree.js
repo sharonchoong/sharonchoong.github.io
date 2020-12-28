@@ -1,7 +1,6 @@
 const tree = (function() {
-	
 	const tree_height = 8;
-	const svgwidth = $("#tree").parent().width();
+	const svgwidth = $("#visuals .container").width();
     const svgheight = 0.7 * window.innerHeight;
 	const svg = d3.select('#tree')
 				.attr("height", svgheight)
