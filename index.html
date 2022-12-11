@@ -84,10 +84,10 @@
                     <path class="tea" style="opacity:1;fill:#803300;fill-opacity:1;stroke:#2b1100;stroke-width:0.252538" d="m 402.35986,404.28167 c -5.2169,-1.56709 -11.75138,-2.72936 -23.92605,-4.25565 -9.20757,-1.15432 -12.95081,-1.84934 -16.98513,-3.15366 l -2.27284,-0.73483 3.6618,-0.0109 c 11.69634,-0.0349 27.11923,2.80909 38.30881,7.06415 4.47152,1.70038 5.08826,2.25486 1.21341,1.09091 z" id="path1586" transform="scale(0.26458333)"/>
                   </g>
             </svg>
-            <div class="container" style="position: absolute; left: 0px; right: 0px; text-align: center;">
-                <div class="masthead-subheading">Nice to meet you!</div>
-                <div class="masthead-heading">I'm Sharon</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a>
+            <div class="container" style="position: absolute; left: 0px; right: 0px; text-align: center; pointer-events:none;">
+                <div class="masthead-subheading svgOverlay">Nice to meet you!</div>
+                <div class="masthead-heading svgOverlay">I'm Sharon</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about" style="pointer-events: auto">Tell Me More</a>
             </div>
         </header>
         <!-- Projects Grid-->
@@ -102,7 +102,7 @@
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%">Loading projects from GitHub...</div>
                     </div>
-                    <svg id="bubble" preserveAspectRatio="xMinYMin meet" viewBox="0 0 600 400" class="svg-background"></svg>
+                    <svg id="bubble" preserveAspectRatio="xMinYMin meet" viewBox="0 0 600 400" class="svg-background bg-light"></svg>
                 </div>
             </div>
         </section>
@@ -111,7 +111,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Visualizations</h2>
-                    <h3 class="section-subheading text-muted">Just for fun (also to help me learn specific concepts).</h3>
+                    <h3 class="section-subheading text-muted">Just for fun.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -160,11 +160,11 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section" id="about">
+        <section class="page-section bg-light" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Aspiring programmer and data scientist who likes to find out how things work and how to build them.</h3>
+                    <h3 class="section-subheading text-muted">Software developer, data scientist and aspiring inventor.</h3>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -194,7 +194,7 @@
                                 <h4>2016-Present</h4>
                                 <h4 class="subheading">Full Stack Developer</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">For work, I develop mostly in C#, .NET Framework/.NET Core, jQuery, Bootstrap, d3.js, and SQL Server, on Azure. I have also written projects in Node and Express.js.</p></div>
+                            <div class="timeline-body"><p class="text-muted">For work, I've developed in React, Node.js, C#, .NET Framework/.NET Core, jQuery, Bootstrap, d3.js, and SQL Server, on Azure. I have also written REST APIs in Express.js.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -203,7 +203,7 @@
                             <div class="timeline-heading">
                                 <h4 class="subheading">Research</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">I like to explore whether evolving innovations, particularly in AI and machine learning, can be practically applied (often in finance-related research or automation).  My models and experiments are usually in R or Python/Jupyter Notebooks.</p></div>
+                            <div class="timeline-body"><p class="text-muted">I like to explore how to practically apply evolving innovations, particularly in AI and machine learning.  My models are usually in R or Python/Jupyter Notebooks.</p></div>
                         </div>
                     </li>
                     <li>
@@ -212,7 +212,7 @@
                             <div class="timeline-heading">
                                 <h4 class="subheading">Learning</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">I try to keep the goal of trying my hand at new things frequently, even if only briefly. Let me know what you think I should learn next!</p></div>
+                            <div class="timeline-body"><p class="text-muted">I have the goal of trying my hand at something new on a frequent basis, even if only briefly. Let me know what you think I should learn next!</p></div>
                         </div>
                     </li>
                 </ul>
@@ -224,7 +224,7 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Me</h2>
                     <i class="fas fa-user-friends fa-7x"></i>
-                    <h3 class="section-subheading text-muted">Would love to hear from you!</h3>
+                    <h3 class="section-subheading text-light">Would love to hear from you!</h3>
                     <div class="contact-detail">
                         Email: <a class="card-title font-weight-bold" href="mailto:sharonchoong.online@gmail.com">sharonchoong.online@gmail.com</a>
                     </div>
@@ -242,10 +242,10 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer py-4">
+        <footer class="footer bg-dark py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Sharon Choong 2020</div>
+                    <div class="col-lg-4 text-lg-left text-light">Copyright © Sharon Choong 2022</div>
                 </div>
             </div>
         </footer>

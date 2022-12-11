@@ -13,16 +13,19 @@ header.masthead .masthead-subheading {
 	font-family: 'Handlee';
 	font-size: 20px !important;
 	font-weight: normal;
+	color: #ECE2D0;
 }
 
 header.masthead .masthead-heading {
 	font-family: 'Handlee';
 	font-size: 48px !important;
 	font-weight: normal;
+	color: #D3A588;
 }
 
 header.masthead {
 	padding-bottom: 60%;
+	box-shadow: 0 10px 10px 10px #2B2D42
 }
 
 .project-title {
@@ -72,7 +75,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .contact-detail {
-	color: white;
+	color: #D3A588;
 }
 
 .svg-container {
@@ -86,4 +89,8 @@ h1, h2, h3, h4, h5, h6,
 	position: absolute;
 	left:0px; 
 	top: 0px;
+}
+
+#contact {
+	box-shadow: 0 0px 7px 6px #2B2D42
 }

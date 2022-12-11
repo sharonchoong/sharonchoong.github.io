@@ -6,13 +6,14 @@
 		$("#progress_projectsload").hide();
 
 		const svg = d3.select('#bubble');
-		svg.style('background-color', '#eee');
 
 		data = data.sort(function(a, b) { return d3.descending(a.size, b.size); }).slice(0, 10);
 
 		const centerX = 300;
 		const centerY =  200;
-		const radius = 400 * 0.15;
+		const minRadius = 50;
+		const radiusStarMultiplier = 2;
+		const radiusForkMultiplier = 3;
 		
 		const scaleColor = d3.scaleOrdinal()
 			.domain(data.map(function(d) { return  d.id }))
@@ -34,11 +35,13 @@
 				name: node.name,
 				url: node.html_url,
 				description: node.description,
-				language: node.language
+				language: node.language,
+				stars: node.stargazers_count || 0,
+				forks: node.forks_count || 0
 			}
 		});
 		simulation.nodes(nodes)
-			.force("collide", d3.forceCollide().strength(.5).radius(radius))
+			.force("collide", d3.forceCollide().strength(.5).radius(function(d) { return getRadius(d); }))
 			.on('tick', function() {
 				node.attr('transform', function(d) { return "translate(" + d.x + "," + d.y + ")"; })
 					.select('circle')
@@ -73,7 +76,7 @@
 			.style('fill', function(d) { return scaleColor(d.id) })
 			.transition().duration(2000).ease(d3.easeElasticOut)
 				.tween('circleIn', function(d) { 
-					let i = d3.interpolateNumber(0, radius);
+					let i = d3.interpolateNumber(0, getRadius(d));
 					return function(t) { 
 						d.r = i(t);
 						simulation.force('collide');
@@ -92,14 +95,14 @@
 			.attr('href', function(d) { return d.url })
 				.append('tspan')
 				.attr('x', 0)
-				.attr('y', -radius * 0.5)
+				.attr('y', function(d) { return -getRadius(d) * 0.5 })
 				.text(function(d) { return d.name })
 				.attr("font-weight", "bold");
 			
 		circle_text.append('tspan')
 			.attr("class", "project-lang")
 			.attr('x', 0)
-			.attr('y', -radius * 0.25)
+			.attr('y', function(d) { return -getRadius(d) * 0.25 })
 			.text(function(d) { return d.language })
 			
 		circle_text.append('tspan')
@@ -108,7 +111,7 @@
 			.attr('y', 0)
 			.attr('dy', 0)
 			.text(function(d) { return d.description })
-			.call(wrap, radius * 1.7);
+			.call(wrap, minRadius * 1.7);
 		
 		function wrap(text, width) {
 		  text.each(function() {
@@ -132,6 +135,12 @@
 			  }
 			}
 		  });
+		}
+
+		function getRadius(data) {
+			return minRadius 
+				+ (data.stars ? Math.log(data.stars) * radiusStarMultiplier: 0)
+				+ (data.forks ? Math.log(data.forks) * radiusForkMultiplier: 0);
 		}
 	});
 })();
